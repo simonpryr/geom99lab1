@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <style>
+            header {
+                background-color: #666;
+                padding: 2px;
+                text-align: center;
+                /* font-size: 35px; */
+                color: white;
+            }
+            #map {
+            height: 100%;
+            }
+
+            /* Optional: Makes the sample page fill the window. */
+            html,
+            body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            }
+        </style>
+        <script>
+            let map;
+    
+            function initMap() {
+            map = new google.maps.Map(document.getElementById("map"), {
+                center: { lat: 28.2096, lng: 83.9856 },
+                zoom: 10,
+            });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <h1>My First Story Map</h1>
+        </header>
+        <div id="map"></div>
+        
+        <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+        <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
+        </script>
+    </body>
+</html>
