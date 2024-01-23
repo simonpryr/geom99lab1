@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+        <script type="module" src="./index.js"></script>
         <style>
             header {
                 background-color: #666;
@@ -25,16 +26,6 @@
             padding: 0;
             }
         </style>
-        <script>
-            let map;
-    
-            function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                center: { lat: 28.2096, lng: 83.9856 },
-                zoom: 10,
-            });
-            }
-        </script>
     </head>
     <body>
         <header>
