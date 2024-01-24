@@ -1,43 +1,27 @@
-// This example displays a marker at the center of Australia.
-// When the user clicks the marker, an info window opens.
+// This example creates a 2-pixel-wide red polyline showing the path of
+// the first trans-Pacific flight between Oakland, CA, and Brisbane,
+// Australia which was made by Charles Kingsford Smith.
 function initMap() {
-  const locations = [
-    { lat: 27.9881, lng: 86.9250 },
-    {lat: 27.7025, lng: 88.1475},
-    {lat: 27.9626, lng: 86.9336}
-    ];
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
-    center: {lat: 27.7172, lng: 85.3240},
+    zoom: 3,
+    center: { lat: 0, lng: -180 },
+    mapTypeId: "terrain",
   });
-  const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
-    "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Everest</h1>' +
-    '<div id="bodyContent">' +
-    "<p>Height Above Mean Sea Level : 8848.86 meter.</p>" +
-    "</div>" +
-    "</div>";
-  const infowindow = new google.maps.InfoWindow({
-    content: contentString,
-  });
-  const markers = locations.map((location, i) => {
-    return new google.maps.Marker({
-      position: location,
-    })
-  // const marker = new google.maps.Marker({
-  //   position: location,
-  //   map,
-  //   title: "Uluru (Ayers Rock)",
+  const flightPlanCoordinates = [
+    { lat: 37.772, lng: -122.214 },
+    { lat: 21.291, lng: -157.821 },
+    { lat: -18.142, lng: 178.431 },
+    { lat: -27.467, lng: 153.027 },
+  ];
+  const flightPath = new google.maps.Polyline({
+    path: flightPlanCoordinates,
+    geodesic: true,
+    strokeColor: "#FF0000",
+    strokeOpacity: 1.0,
+    strokeWeight: 2,
   });
 
-  marker.addListener("click", () => {
-    infowindow.open({
-      anchor: marker,
-      map,
-    });
-  });
+  flightPath.setMap(map);
 }
 
 window.initMap = initMap;
