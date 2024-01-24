@@ -1,10 +1,14 @@
 // This example displays a marker at the center of Australia.
 // When the user clicks the marker, an info window opens.
 function initMap() {
-  const everest = { lat: 27.9881, lng: 86.9250 };
+  const location = [
+    { lat: 27.9881, lng: 86.9250 },
+    {lat: 27.7025, lng: 88.1475},
+    {lat: 27.9626, lng: 86.9336}
+    ];
   const map = new google.maps.Map(document.getElementById("map"), {
     zoom: 8,
-    center: everest,
+    center: {lat: 27.7172, lng: 85.3240},
   });
   const contentString =
     '<div id="content">' +
@@ -19,7 +23,7 @@ function initMap() {
     content: contentString,
   });
   const marker = new google.maps.Marker({
-    position: everest,
+    position: location,
     map,
     title: "Uluru (Ayers Rock)",
   });
