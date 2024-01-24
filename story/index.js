@@ -3,7 +3,7 @@
 function initMap() {
   const uluru = { lat: 27.9881, lng: 86.9250 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 5,
+    zoom: 4,
     center: uluru,
   });
   const contentString =
@@ -13,9 +13,6 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Everest</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8848.86 meter.</p>" +
-    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
-    "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
-    "(last visited June 22, 2009).</p>" +
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
