@@ -10,7 +10,7 @@ function initMap() {
   const manaslu = { lat: 28.5497, lng: 84.5597 };
   const annapurna_I = { lat: 28.5961, lng: 83.8203 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 8,
+    zoom: 7,
     center: { lat: 27.7172, lng: 85.3240},
   });
   const contentString =
