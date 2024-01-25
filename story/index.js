@@ -1,6 +1,8 @@
 // This map displays a marker of the mountain of Nepal above 8,000 m above mean sea level  
 // When the user clicks the marker, an info window opens.
 // Reference taken from Website: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
+const labels = "12345678";
+  let labelIndex = 0;
 function initMap() {
   const everest = { lat: 27.9881, lng: 86.9250 };
   const kangchenjunga = { lat: 27.7025, lng: 88.1475};
@@ -27,8 +29,6 @@ function initMap() {
     content: contentString,
     maxWidth: 250,
   });
-  const labels = "12345678";
-  let labelIndex = 0;
   const marker = new google.maps.Marker({
     position: everest,
     label: labels[labelIndex++ % labels.length],
