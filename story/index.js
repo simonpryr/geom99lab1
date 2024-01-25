@@ -25,7 +25,7 @@ function initMap() {
     "</div>";
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker = new google.maps.Marker({
     position: everest,
@@ -49,7 +49,7 @@ function initMap() {
     "</div>";
   const kjinfowindow = new google.maps.InfoWindow({
     content: kjcontentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker2 = new google.maps.Marker({
     position: kangchenjunga,
@@ -73,7 +73,7 @@ function initMap() {
     "</div>";
   const ltinfowindow = new google.maps.InfoWindow({
     content: ltcontentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker3 = new google.maps.Marker({
     position: lhotse,
@@ -97,7 +97,7 @@ function initMap() {
     "</div>";
   const mkinfowindow = new google.maps.InfoWindow({
     content: mkcontentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker4 = new google.maps.Marker({
     position: makalu,
@@ -121,7 +121,7 @@ function initMap() {
     "</div>";
   const coinfowindow = new google.maps.InfoWindow({
     content: cocontentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker5 = new google.maps.Marker({
     position: cho_oyu,
@@ -145,7 +145,7 @@ function initMap() {
     "</div>";
   const dginfowindow = new google.maps.InfoWindow({
     content: dgcontentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker6 = new google.maps.Marker({
     position: dhaulagiri_I,
@@ -169,7 +169,7 @@ function initMap() {
     "</div>";
   const msinfowindow = new google.maps.InfoWindow({
     content: mscontentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker7 = new google.maps.Marker({
     position: manaslu,
@@ -193,7 +193,7 @@ function initMap() {
     "</div>";
   const anpinfowindow = new google.maps.InfoWindow({
     content: anpcontentString,
-    maxWidth: 200,
+    maxWidth: 250,
   });
   const marker8 = new google.maps.Marker({
     position: annapurna_I,
