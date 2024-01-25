@@ -27,11 +27,12 @@ function initMap() {
     content: contentString,
     maxWidth: 250,
   });
+  const labels = "12345678";
+  let labelIndex = 0;
   const marker = new google.maps.Marker({
     position: everest,
+    label: labels[labelIndex++ % labels.length],
     map,
-    label: {color: '#000', fontSize: '12px', fontWeight: '600',
-    text: '123'}
   });
 
   marker.addListener("click", () => {
