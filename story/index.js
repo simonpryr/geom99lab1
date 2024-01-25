@@ -50,7 +50,7 @@ function initMap() {
   });
 
   marker2.addListener("click", () => {
-    infowindow.open({
+    kjinfowindow.open({
       anchor: marker2,
       map,
     });
