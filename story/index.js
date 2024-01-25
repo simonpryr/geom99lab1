@@ -1,8 +1,6 @@
 // This map displays a marker of the mountain of Nepal above 8,000 m above mean sea level  
 // When the user clicks the marker, an info window opens.
 // Reference taken from Website: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
-const labels = "12345678";
-  let labelIndex = 0;
 function initMap() {
   const everest = { lat: 27.9881, lng: 86.9250 };
   const kangchenjunga = { lat: 27.7025, lng: 88.1475};
@@ -31,7 +29,7 @@ function initMap() {
   });
   const marker = new google.maps.Marker({
     position: everest,
-    label: labels[labelIndex++ % labels.length],
+    label: "1",
     map,
   });
 
@@ -56,7 +54,7 @@ function initMap() {
   });
   const marker2 = new google.maps.Marker({
     position: kangchenjunga,
-    label: labels[labelIndex++ % labels.length],
+    label: "2",
     map,
   });
 
@@ -81,7 +79,7 @@ function initMap() {
   });
   const marker3 = new google.maps.Marker({
     position: lhotse,
-    label: labels[labelIndex++ % labels.length],
+    label: "3",
     map,
   });
 
@@ -106,7 +104,7 @@ function initMap() {
   });
   const marker4 = new google.maps.Marker({
     position: makalu,
-    label: labels[labelIndex++ % labels.length],
+    label: "4",
     map,
   });
 
@@ -131,7 +129,7 @@ function initMap() {
   });
   const marker5 = new google.maps.Marker({
     position: cho_oyu,
-    label: labels[labelIndex++ % labels.length],
+    label: "5",
     map,
   });
 
@@ -156,7 +154,7 @@ function initMap() {
   });
   const marker6 = new google.maps.Marker({
     position: dhaulagiri_I,
-    label: labels[labelIndex++ % labels.length],
+    label: "6",
     map,
   });
 
@@ -181,7 +179,7 @@ function initMap() {
   });
   const marker7 = new google.maps.Marker({
     position: manaslu,
-    label: labels[labelIndex++ % labels.length],
+    label: "7",
     map,
   });
 
@@ -206,7 +204,7 @@ function initMap() {
   });
   const marker8 = new google.maps.Marker({
     position: annapurna_I,
-    label: labels[labelIndex++ % labels.length],
+    label: "8",
     map,
   });
 
