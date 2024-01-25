@@ -21,6 +21,7 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Everest</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,848.86 meter.</p>" +
+    "<P>Hello World</p>"
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
