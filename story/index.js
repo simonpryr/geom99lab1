@@ -1,13 +1,14 @@
-// This example displays a marker at the center of Australia.
+// This example displays a marker at the Mountain if Nepal Above 8000m.
 // When the user clicks the marker, an info window opens.
 // The maximum width of the info window is set to 200 pixels.
 function initMap() {
-  const uluru = { lat: -25.363, lng: 131.044 };
+  const m1 = { lat: 27.9881, lng: 86.9250 };
+  const m2 = { lat: 27.7025, lng: 88.1475 };
   const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 4,
-    center: uluru,
+    zoom: 6,
+    center: { lat: 27.7172, lng: 85.3240 },
   });
-  const contentString =
+  const m1contentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
@@ -28,13 +29,13 @@ function initMap() {
     "(last visited June 22, 2009).</p>" +
     "</div>" +
     "</div>";
-  const infowindow = new google.maps.InfoWindow({
-    content: contentString,
+  const m1infowindow = new google.maps.InfoWindow({
+    content: m1contentString,
     maxWidth: 200,
     ariaLabel: "Uluru",
   });
-  const marker = new google.maps.Marker({
-    position: uluru,
+  const m1marker = new google.maps.Marker({
+    position: m1,
     map,
     title: "Uluru (Ayers Rock)",
   });
