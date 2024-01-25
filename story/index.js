@@ -37,6 +37,9 @@ function initMap() {
       anchor: marker,
       map,
     });
+    google.maps.event.addListener(map, 'click', function() {
+				infoWindow.close();
+			});
   });
   const kjcontentString =
     '<div id="content">' +
