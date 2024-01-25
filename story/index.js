@@ -1,5 +1,6 @@
-// This example displays a marker at the center of Australia.
+// This map displays a marker of the mountain of Nepal above 8,000 m above mean sea level  
 // When the user clicks the marker, an info window opens.
+// Reference taken from Website: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
 function initMap() {
   const everest = { lat: 27.9881, lng: 86.9250 };
   const kangchenjunga = { lat: 27.7025, lng: 88.1475};
@@ -24,11 +25,11 @@ function initMap() {
     "</div>";
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
+    maxWidth: 200,
   });
   const marker = new google.maps.Marker({
     position: everest,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker.addListener("click", () => {
@@ -48,11 +49,11 @@ function initMap() {
     "</div>";
   const kjinfowindow = new google.maps.InfoWindow({
     content: kjcontentString,
+    maxWidth: 200,
   });
   const marker2 = new google.maps.Marker({
     position: kangchenjunga,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker2.addListener("click", () => {
@@ -72,11 +73,11 @@ function initMap() {
     "</div>";
   const ltinfowindow = new google.maps.InfoWindow({
     content: ltcontentString,
+    maxWidth: 200,
   });
   const marker3 = new google.maps.Marker({
     position: lhotse,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker3.addListener("click", () => {
@@ -96,11 +97,11 @@ function initMap() {
     "</div>";
   const mkinfowindow = new google.maps.InfoWindow({
     content: mkcontentString,
+    maxWidth: 200,
   });
   const marker4 = new google.maps.Marker({
     position: makalu,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker4.addListener("click", () => {
@@ -120,11 +121,11 @@ function initMap() {
     "</div>";
   const coinfowindow = new google.maps.InfoWindow({
     content: cocontentString,
+    maxWidth: 200,
   });
   const marker5 = new google.maps.Marker({
     position: cho_oyu,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker5.addListener("click", () => {
@@ -144,11 +145,11 @@ function initMap() {
     "</div>";
   const dginfowindow = new google.maps.InfoWindow({
     content: dgcontentString,
+    maxWidth: 200,
   });
   const marker6 = new google.maps.Marker({
     position: dhaulagiri_I,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker6.addListener("click", () => {
@@ -168,11 +169,11 @@ function initMap() {
     "</div>";
   const msinfowindow = new google.maps.InfoWindow({
     content: mscontentString,
+    maxWidth: 200,
   });
   const marker7 = new google.maps.Marker({
     position: manaslu,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker7.addListener("click", () => {
@@ -192,11 +193,11 @@ function initMap() {
     "</div>";
   const anpinfowindow = new google.maps.InfoWindow({
     content: anpcontentString,
+    maxWidth: 200,
   });
   const marker8 = new google.maps.Marker({
     position: annapurna_I,
     map,
-    title: "Uluru (Ayers Rock)",
   });
 
   marker8.addListener("click", () => {
