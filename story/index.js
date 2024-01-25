@@ -27,14 +27,10 @@ function initMap() {
     content: contentString,
     maxWidth: 250,
   });
-   const image = {
-    url:"mountain.pnj",
-   };
   const marker = new google.maps.Marker({
     position: everest,
     label: "1",
     map,
-    icon: image,
   });
 
   marker.addListener("click", () => {
