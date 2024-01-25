@@ -38,9 +38,6 @@ function initMap() {
       map,
     });
   });
-	infoWindow.addListener('closeclick', ()=>{
-  // Handle focus manually.
-	});
   const kjcontentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
