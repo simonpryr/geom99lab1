@@ -30,6 +30,8 @@ function initMap() {
   const marker = new google.maps.Marker({
     position: everest,
     map,
+    label: {color: '#000', fontSize: '12px', fontWeight: '600',
+    text: '123'}
   });
 
   marker.addListener("click", () => {
@@ -38,9 +40,6 @@ function initMap() {
       map,
     });
   });
-  google.maps.event.addListener(map, 'click', () => {
-  infoWindow.close();
-});
   const kjcontentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
