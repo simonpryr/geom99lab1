@@ -21,12 +21,14 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Everest</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,848.86 meter.</p>" +
-    "<P>Mount Everest (Nepali: सगरमाथा, romanized: Sagarmāthā; Standard Tibetan: ཇོ་མོ་གླང་མ, romanized: Chomolungma; " +
+    "<P><b>Mount Everest</b> (Nepali: सगरमाथा, romanized: Sagarmāthā; Standard Tibetan: ཇོ་མོ་གླང་མ, romanized: Chomolungma; " +
     "Chinese: 珠穆朗玛峰; pinyin: Zhūmùlǎngmǎ Fēng) is Earth's highest mountain above sea level, " +
     "located in the Mahalangur Himal sub-range of the Himalayas. " +
     "The China–Nepal border runs across its summit point. " +
     "Its elevation (snow height) of 8,848.86 m (29,031 ft 8+1⁄2 in) was most recently " +
     "established in 2020 by the Chinese and Nepali authorities.</p>" +
+    "<p> Attribution: <a href="https://en.wikipedia.org/wiki/Mount_Everest">" +
+  "https://en.wikipedia.org/wiki/Mount_Everest"</p>" +
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
