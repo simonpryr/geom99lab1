@@ -41,7 +41,7 @@ function initMap() {
   });
 
   marker.addListener("click", () => {
-    infowindow.open({
+    m1infowindow.open({
       anchor: m1marker,
       map,
     });
