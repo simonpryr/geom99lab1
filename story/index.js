@@ -38,6 +38,9 @@ function initMap() {
       map,
     });
   });
+  google.maps.event.addListener(map, 'click', () => {
+  infoWindow.close();
+});
   const kjcontentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
