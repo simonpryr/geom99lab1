@@ -37,10 +37,10 @@ function initMap() {
       anchor: marker,
       map,
     });
-    google.maps.event.addListener(map, 'click', function() {
-				infoWindow.close();
-			});
   });
+	infoWindow.addListener('closeclick', ()=>{
+  // Handle focus manually.
+	});
   const kjcontentString =
     '<div id="content">' +
     '<div id="siteNotice">' +
