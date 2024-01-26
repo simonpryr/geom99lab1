@@ -90,6 +90,15 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Lhotse</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,516 meter.</p>" +
+    "<P><b>Lhotse</b> (Nepali: ल्होत्से L'hōtsē Nepali pronunciation: " +
+    "[lot.se]; Tibetan: ལྷོ་རྩེ Tibetan pronunciation: [l̥otse], " +
+    "lho tse, Chinese: 洛子峰) is the fourth highest mountain in " +
+    "the world at 8,516 metres (27,940 ft), after Mount Everest, K2, " +
+    "and Kangchenjunga. The main summit is on the border between Tibet " +
+    "Autonomous Region of China and the Khumbu region of Nepal.</p>" +
+    '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Lhotse">' +
+    "https://en.wikipedia.org/wiki/Lhotse</a> " +
+    "</p>" +
     "</div>" +
     "</div>";
   const ltinfowindow = new google.maps.InfoWindow({
