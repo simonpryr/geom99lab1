@@ -27,7 +27,7 @@ function initMap() {
     "The China–Nepal border runs across its summit point. " +
     "Its elevation (snow height) of 8,848.86 m (29,031 ft 8+1⁄2 in) was most recently " +
     "established in 2020 by the Chinese and Nepali authorities.</p>" +
-    "<p>Attribution: <a href="https://en.wikipedia.org/wiki/Mount_Everest>" +
+    "<p>Attribution: <a href=https://en.wikipedia.org/wiki/Mount_Everest>" +
   "https://en.wikipedia.org/wiki/Mount_Everest</p>" +
     "</div>" +
     "</div>";
