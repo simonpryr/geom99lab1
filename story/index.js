@@ -2,6 +2,7 @@
 // When the user clicks the marker, an info window opens.
 // Reference taken from Website: https://developers.google.com/maps/documentation/javascript/examples/infowindow-simple
 function initMap() {
+  // Initializing the coordinates of Point of Interest and setting the zoom level and where to center in the map.
   const everest = { lat: 27.9881, lng: 86.9250 };
   const kangchenjunga = { lat: 27.7025, lng: 88.1475};
   const lhotse = { lat: 27.9626, lng: 86.9336 };
@@ -33,7 +34,7 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
-  // creates a new infowindow
+  // creates a new infowindow and assign the content to show within
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
     maxWidth: 250,
@@ -70,16 +71,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+    // creates a new infowindow and assign the content to show within
   const kjinfowindow = new google.maps.InfoWindow({
     content: kjcontentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker2 = new google.maps.Marker({
     position: kangchenjunga,
     label: "2",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker2.addListener("click", () => {
     kjinfowindow.open({
       anchor: marker2,
@@ -105,16 +108,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+  // creates a new infowindow and assign the content to show within
   const ltinfowindow = new google.maps.InfoWindow({
     content: ltcontentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker3 = new google.maps.Marker({
     position: lhotse,
     label: "3",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker3.addListener("click", () => {
     ltinfowindow.open({
       anchor: marker3,
@@ -140,16 +145,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+    // creates a new infowindow and assign the content to show within
   const mkinfowindow = new google.maps.InfoWindow({
     content: mkcontentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker4 = new google.maps.Marker({
     position: makalu,
     label: "4",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker4.addListener("click", () => {
     mkinfowindow.open({
       anchor: marker4,
@@ -175,16 +182,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+    // creates a new infowindow and assign the content to show within
   const coinfowindow = new google.maps.InfoWindow({
     content: cocontentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker5 = new google.maps.Marker({
     position: cho_oyu,
     label: "5",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker5.addListener("click", () => {
     coinfowindow.open({
       anchor: marker5,
@@ -210,16 +219,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+  // creates a new infowindow and assign the content to show within
   const dginfowindow = new google.maps.InfoWindow({
     content: dgcontentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker6 = new google.maps.Marker({
     position: dhaulagiri_I,
     label: "6",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker6.addListener("click", () => {
     dginfowindow.open({
       anchor: marker6,
@@ -245,16 +256,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+    // creates a new infowindow and assign the content to show within
   const msinfowindow = new google.maps.InfoWindow({
     content: mscontentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker7 = new google.maps.Marker({
     position: manaslu,
     label: "7",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker7.addListener("click", () => {
     msinfowindow.open({
       anchor: marker7,
@@ -280,16 +293,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+    // creates a new infowindow and assign the content to show within
   const anpinfowindow = new google.maps.InfoWindow({
     content: anpcontentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker8 = new google.maps.Marker({
     position: annapurna_I,
     label: "8",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker8.addListener("click", () => {
     anpinfowindow.open({
       anchor: marker8,
