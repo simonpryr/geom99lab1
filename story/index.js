@@ -29,7 +29,7 @@ function initMap() {
     "established in 2020 by the Chinese and Nepali authorities.</p>" +
     '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Mount_Everest">' +
     "https://en.wikipedia.org/wiki/Mount_Everest</a> " +
-    "(last visited June 22, 2009).</p>" +
+    "</p>" +
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
