@@ -27,6 +27,9 @@ function initMap() {
     "The China–Nepal border runs across its summit point. " +
     "Its elevation (snow height) of 8,848.86 m (29,031 ft 8+1⁄2 in) was most recently " +
     "established in 2020 by the Chinese and Nepali authorities.</p>" +
+    '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">' +
+    "https://en.wikipedia.org/w/index.php?title=Uluru</a> " +
+    "(last visited June 22, 2009).</p>" +
     "</div>" +
     "</div>";
   const infowindow = new google.maps.InfoWindow({
