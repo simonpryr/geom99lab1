@@ -124,6 +124,15 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Makalu</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,463 meter.</p>" +
+    "<P><b>Makalu</b> (Nepali: मकालु हिमाल, romanized: Makālu himāl; Chinese: 马卡鲁峰, " +
+    "pinyin: Mǎkǎlǔ Fēng) is the fifth highest mountain in the world at 8,485 " +
+    "metres (27,838 ft). It is located in the Mahalangur Himalayas 19 km (12 mi) " +
+    "southeast of Mount Everest, on the China–Nepal border. One of the " +
+    "eight-thousanders, Makalu is an isolated peak in the shape of a four-sided " +
+    "pyramid.</p>" +
+    '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Makalu">' +
+    "https://en.wikipedia.org/wiki/Makalu</a> " +
+    "</p>" +
     "</div>" +
     "</div>";
   const mkinfowindow = new google.maps.InfoWindow({
@@ -149,6 +158,15 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Cho Oyu</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,201 meter.</p>" +
+    "<P><b>Cho Oyu</b> (Nepali: चोयु; Tibetan: ཇོ་བོ་དབུ་ཡ; Chinese: 卓奥友峰) is the sixth-highest " +
+    "mountain in the world at 8,188 metres (26,864 ft) above sea level. Cho Oyu " +
+    "means Turquoise Goddess in Tibetan. The mountain is the westernmost " +
+    "major peak of the Khumbu sub-section of the Mahalangur Himalaya 20 km west of " +
+    "Mount Everest. The mountain stands on the China Tibet–Nepal Province No. 1 " +
+    "border.</p>" +
+    '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Cho_Oyu">' +
+    "https://en.wikipedia.org/wiki/Cho_Oyu</a> " +
+    "</p>" +
     "</div>" +
     "</div>";
   const coinfowindow = new google.maps.InfoWindow({
@@ -174,6 +192,15 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Dhaulagiri</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,167 meter.</p>" +
+    "<P><b>Dhaulagiri</b>, located in Nepal, is the seventh highest mountain in the world at 8,167 metres (26,795 ft) " +
+    "above sea level, and the highest mountain within the borders of a single country. It was first climbed " +
+    "on 13 May 1960 by a Swiss-Austrian-Nepali expedition. Annapurna I (8,091 m (26,545 ft)) is 34 km (21 mi) " +
+    "east of Dhaulagiri. The Kali Gandaki River flows between the two in the Kaligandaki Gorge, said to be the world's deepest. " +
+    "The town of Pokhara is south of the Annapurnas, an important regional center and the gateway for climbers and " +
+    "trekkers visiting both ranges as well as a tourist destination in its own right.</p>" +
+    '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Dhaulagiri">' +
+    "https://en.wikipedia.org/wiki/Dhaulagiri</a> " +
+    "</p>" +
     "</div>" +
     "</div>";
   const dginfowindow = new google.maps.InfoWindow({
@@ -199,6 +226,16 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Manaslu</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,163 meter.</p>" +
+    "<p>Height Above Mean Sea Level : 8,163 meter.</p>" +
+    "<P><b>Manaslu</b> (/məˈnɑːsluː/; Nepali: मनास्लु, also known as Kutang) is the eighth-highest mountain in the world at 8,163 metres (26,781 ft) " +
+    "above sea level. It is in the Mansiri Himal, part of the Nepalese Himalayas, in west-central Nepal. Manaslu means mountain of the spirit and  " +
+    "the word is derived from the Sanskrit word manasa, meaning intellect or soul. Manaslu was first climbed on May 9, 1956, by Toshio Imanishi " +
+    "and Gyalzen Norbu, members of a Japanese expedition. It is said that, given the many unsuccessful attempts by the " +
+    "British to climb Everest before Nepali Tenzing Norgay and New Zealander Edmund " +
+    "Hillary, just as the British consider Everest their mountain, Manaslu has always been a Japanese mountain.</p>" +
+    '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Manaslu">' +
+    "https://en.wikipedia.org/wiki/Manaslu</a> " +
+    "</p>" +
     "</div>" +
     "</div>";
   const msinfowindow = new google.maps.InfoWindow({
@@ -224,6 +261,15 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Annapurna</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,091 meter.</p>" +
+    "<P><b>Annapurna</b> (/ˌænəˈpʊərnəˌ -ˈpɜːr-/;[3][4] Nepali: अन्नपूर्ण) is a " +
+    "mountain situated in the Annapurna mountain range of Gandaki Province, " +
+    "north-central Nepal. It is the 10th highest mountain " +
+    "in the world at 8,091 metres (26,545 ft) above " +
+    "sea level and is well known for the difficulty " +
+    "and danger involved in its ascent.</p>" +
+    '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Annapurna">' +
+    "https://en.wikipedia.org/wiki/Annapurna</a> " +
+    "</p>" +
     "</div>" +
     "</div>";
   const anpinfowindow = new google.maps.InfoWindow({
