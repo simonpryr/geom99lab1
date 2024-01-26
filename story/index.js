@@ -15,13 +15,13 @@ function initMap() {
     center: { lat: 27.7172, lng: 85.3240},
   });
   const contentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content1">' +
+    '<div id="siteNotice1">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Everest</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading1" class="firstHeading">Mt. Everest</h1>' +
+    '<div id="bodyContent1">' +
     "<p>Height Above Mean Sea Level : 8,848.86 meter.</p>" +
-    // Content Added from Wikipedia
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Mount_Everest
     "<P><b>Mount Everest</b> (Nepali: सगरमाथा, romanized: Sagarmāthā; Standard Tibetan: ཇོ་མོ་གླང་མ, romanized: Chomolungma; " +
     "Chinese: 珠穆朗玛峰; pinyin: Zhūmùlǎngmǎ Fēng) is Earth's highest mountain above sea level, " +
     "located in the Mahalangur Himal sub-range of the Himalayas. " +
@@ -33,16 +33,18 @@ function initMap() {
     "</p>" +
     "</div>" +
     "</div>";
+  // creates a new infowindow
   const infowindow = new google.maps.InfoWindow({
     content: contentString,
     maxWidth: 250,
   });
+  // Creates a new marker
   const marker = new google.maps.Marker({
     position: everest,
     label: "1",
     map,
   });
-
+// opens the infowindow on clicking the marker
   marker.addListener("click", () => {
     infowindow.open({
       anchor: marker,
@@ -50,12 +52,13 @@ function initMap() {
     });
   });
   const kjcontentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content2">' +
+    '<div id="siteNotice2">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Kangchenjunga</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading2" class="firstHeading">Mt. Kangchenjunga</h1>' +
+    '<div id="bodyContent2">' +
     "<p>Height Above Mean Sea Level : 8,586 meter.</p>" +
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Kangchenjunga
     "<P><b>Kangchenjunga</b>, also spelled Kanchenjunga, Kanchanjanghā and Khangchendzonga, is " +
     "the third-highest mountain in the world. Its summit lies at 8,586 m (28,169 ft) in a " +
     "section of the Himalayas, the Kangchenjunga Himal, which is bounded in the west by the " +
@@ -84,12 +87,13 @@ function initMap() {
     });
   });
     const ltcontentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content3">' +
+    '<div id="siteNotice3">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Lhotse</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading3" class="firstHeading">Mt. Lhotse</h1>' +
+    '<div id="bodyContent3">' +
     "<p>Height Above Mean Sea Level : 8,516 meter.</p>" +
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Lhotse
     "<P><b>Lhotse</b> (Nepali: ल्होत्से L'hōtsē Nepali pronunciation: " +
     "[lot.se]; Tibetan: ལྷོ་རྩེ Tibetan pronunciation: [l̥otse], " +
     "lho tse, Chinese: 洛子峰) is the fourth highest mountain in " +
@@ -118,12 +122,13 @@ function initMap() {
     });
   });
     const mkcontentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content4">' +
+    '<div id="siteNotice4">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Makalu</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading4" class="firstHeading">Mt. Makalu</h1>' +
+    '<div id="bodyContent4">' +
     "<p>Height Above Mean Sea Level : 8,463 meter.</p>" +
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Makalu
     "<P><b>Makalu</b> (Nepali: मकालु हिमाल, romanized: Makālu himāl; Chinese: 马卡鲁峰, " +
     "pinyin: Mǎkǎlǔ Fēng) is the fifth highest mountain in the world at 8,485 " +
     "metres (27,838 ft). It is located in the Mahalangur Himalayas 19 km (12 mi) " +
@@ -152,12 +157,13 @@ function initMap() {
     });
   });
     const cocontentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content5">' +
+    '<div id="siteNotice5">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Cho Oyu</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading5" class="firstHeading">Mt. Cho Oyu</h1>' +
+    '<div id="bodyContent5">' +
     "<p>Height Above Mean Sea Level : 8,201 meter.</p>" +
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Cho_Oyu
     "<P><b>Cho Oyu</b> (Nepali: चोयु; Tibetan: ཇོ་བོ་དབུ་ཡ; Chinese: 卓奥友峰) is the sixth-highest " +
     "mountain in the world at 8,188 metres (26,864 ft) above sea level. Cho Oyu " +
     "means Turquoise Goddess in Tibetan. The mountain is the westernmost " +
@@ -186,12 +192,13 @@ function initMap() {
     });
   });
     const dgcontentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content6">' +
+    '<div id="siteNotice6">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Dhaulagiri</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading6" class="firstHeading">Mt. Dhaulagiri</h1>' +
+    '<div id="bodyContent6">' +
     "<p>Height Above Mean Sea Level : 8,167 meter.</p>" +
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Dhaulagiri
     "<P><b>Dhaulagiri</b>, located in Nepal, is the seventh highest mountain in the world at 8,167 metres (26,795 ft) " +
     "above sea level, and the highest mountain within the borders of a single country. It was first climbed " +
     "on 13 May 1960 by a Swiss-Austrian-Nepali expedition. Annapurna I (8,091 m (26,545 ft)) is 34 km (21 mi) " +
@@ -220,12 +227,13 @@ function initMap() {
     });
   });
     const mscontentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content7">' +
+    '<div id="siteNotice7">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Manaslu</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading7" class="firstHeading">Mt. Manaslu</h1>' +
+    '<div id="bodyContent7">' +
     "<p>Height Above Mean Sea Level : 8,163 meter.</p>" +
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Manaslu
     "<P><b>Manaslu</b> (/məˈnɑːsluː/; Nepali: मनास्लु, also known as Kutang) is the eighth-highest mountain in the world at 8,163 metres (26,781 ft) " +
     "above sea level. It is in the Mansiri Himal, part of the Nepalese Himalayas, in west-central Nepal. Manaslu means mountain of the spirit and  " +
     "the word is derived from the Sanskrit word manasa, meaning intellect or soul. Manaslu was first climbed on May 9, 1956, by Toshio Imanishi " +
@@ -254,12 +262,13 @@ function initMap() {
     });
   });
     const anpcontentString =
-    '<div id="content">' +
-    '<div id="siteNotice">' +
+    '<div id="content8">' +
+    '<div id="siteNotice8">' +
     "</div>" +
-    '<h1 id="firstHeading" class="firstHeading">Mt. Annapurna</h1>' +
-    '<div id="bodyContent">' +
+    '<h1 id="firstHeading8" class="firstHeading">Mt. Annapurna</h1>' +
+    '<div id="bodyContent8">' +
     "<p>Height Above Mean Sea Level : 8,091 meter.</p>" +
+    // Content Added from Wikipedia website: https://en.wikipedia.org/wiki/Annapurna
     "<P><b>Annapurna</b> (/ˌænəˈpʊərnəˌ -ˈpɜːr-/;[3][4] Nepali: अन्नपूर्ण) is a " +
     "mountain situated in the Annapurna mountain range of Gandaki Province, " +
     "north-central Nepal. It is the 10th highest mountain " +
