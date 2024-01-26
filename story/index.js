@@ -56,6 +56,15 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Kangchenjunga</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,586 meter.</p>" +
+    "<P><b>Kangchenjunga</b>, also spelled Kanchenjunga, Kanchanjanghā and Khangchendzonga, is " +
+    "the third-highest mountain in the world. Its summit lies at 8,586 m (28,169 ft) in a " +
+    "section of the Himalayas, the Kangchenjunga Himal, which is bounded in the west by the " +
+    "Tamur River, in the north by the Lhonak River and Jongsang La, and in the east by the Teesta River. " +
+    "It lies in the border region between Nepal and Sikkim state of India, with three of the five peaks, " +
+    "namely Main, Central and South, directly on the border, and the peaks West and Kangbachen in Nepal's Taplejung District.</p>" +
+    '<p>Attribution: <a href="https://en.wikipedia.org/wiki/Kangchenjunga">' +
+    "https://en.wikipedia.org/wiki/Kangchenjunga</a> " +
+    "</p>" +
     "</div>" +
     "</div>";
   const kjinfowindow = new google.maps.InfoWindow({
