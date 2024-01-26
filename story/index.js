@@ -226,7 +226,6 @@ function initMap() {
     '<h1 id="firstHeading" class="firstHeading">Mt. Manaslu</h1>' +
     '<div id="bodyContent">' +
     "<p>Height Above Mean Sea Level : 8,163 meter.</p>" +
-    "<p>Height Above Mean Sea Level : 8,163 meter.</p>" +
     "<P><b>Manaslu</b> (/məˈnɑːsluː/; Nepali: मनास्लु, also known as Kutang) is the eighth-highest mountain in the world at 8,163 metres (26,781 ft) " +
     "above sea level. It is in the Mansiri Himal, part of the Nepalese Himalayas, in west-central Nepal. Manaslu means mountain of the spirit and  " +
     "the word is derived from the Sanskrit word manasa, meaning intellect or soul. Manaslu was first climbed on May 9, 1956, by Toshio Imanishi " +
