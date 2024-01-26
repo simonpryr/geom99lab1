@@ -18,9 +18,19 @@
             }
             #map {
 /*                 Sets the map height to 90% */
+            position: absolute;
             height: 90%;
             }
-
+            .legend {
+            position: absolute;
+            align-items: center;
+            background: rgb(144, 196, 238);
+            width: 10%;
+            left: 10px;
+            top: 200px;
+            height: 180px;
+            list-style: none;
+            }   
             /* Optional: Makes the sample page fill the window. */
             html,
             body {
@@ -37,6 +47,17 @@
             <h1>Mountains of Nepal with more than 8,000 meter height.</h1>
         </header>
         <div id="map"></div>
+         <div class="legend">
+            <p>Legnd</p>
+            <li>1 : Mt. Everest</li>
+            <li>2 : Mt. Kangchenjunga</li>
+            <li>3 : Mt. Lhotse</li>
+            <li>4: Mt. Makalu</li>
+            <li>5 : Mt. Cho Oyu</li>
+            <li>6: Mt. Dhaulagiri</li>
+            <li>6: Mt. Manaslu</li>
+            <li>6: Mt. Annapurna</li>
+        </div>
         
         <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
